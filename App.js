@@ -1,29 +1,13 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { View } from "react-native";
+import RegistrationScreen from "./src/Screens/RegistrationScreen/RegistrationScreen";
 
-const Flex = () => {
+function App() {
   return (
-    <View
-      style={[
-        styles.container,
-        {
-          // Try setting `flexDirection` to `"row"`.
-          flexDirection: "column",
-        },
-      ]}
-    >
-      <View style={{ flex: 2, backgroundColor: "red" }} />
-      <View style={{ flex: 1, backgroundColor: "darkorange" }} />
-      <View style={{ flex: 5, backgroundColor: "green" }} />
+    <View>
+      <RegistrationScreen />
     </View>
   );
-};
+}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 20,
-  },
-});
-
-export default Flex;
+export default App;
