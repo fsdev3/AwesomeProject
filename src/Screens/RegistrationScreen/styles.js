@@ -1,10 +1,13 @@
 import { StyleSheet } from "react-native";
 
 const stylesReg = StyleSheet.create({
+  regKeyboard: {
+    // paddingTop: -150,
+  },
   regContainer: {
     flexGrow: 1,
   },
-  bgContainer: {
+  bg: {
     width: "100%",
     height: "100%",
   },
@@ -16,7 +19,7 @@ const stylesReg = StyleSheet.create({
     position: "relative",
     justifyContent: "flex-end",
     alignItems: "center",
-    paddingTop: 92,
+    paddingTop: 90,
     paddingLeft: 16,
     paddingRight: 16,
     paddingBottom: 20,
@@ -33,7 +36,6 @@ const stylesReg = StyleSheet.create({
     position: "relative",
     width: 120,
     height: 120,
-    // borderWidth: 1,
     borderRadius: 16,
     backgroundColor: "#F6F6F6",
   },
@@ -41,7 +43,7 @@ const stylesReg = StyleSheet.create({
   title: {
     color: "black",
     fontSize: 30,
-    // fontFamily: "Roboto-500",
+    fontFamily: "Roboto-Medium",
     textAlign: "center",
     marginBottom: 16,
   },
@@ -55,7 +57,8 @@ const stylesReg = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 5,
     paddingLeft: 16,
-    stroke: "red",
+    fontSize: 16,
+    backgroundColor: "#F6F6F6",
   },
 
   button: {
