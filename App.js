@@ -16,8 +16,8 @@ function App() {
   }
   return (
     <View>
-      {/* <RegistrationScreen /> */}
-      <LoginScreen />
+      <RegistrationScreen />
+      {/* <LoginScreen /> */}
     </View>
   );
 }

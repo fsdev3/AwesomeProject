@@ -39,7 +39,11 @@ const stylesReg = StyleSheet.create({
     borderRadius: 16,
     backgroundColor: "#F6F6F6",
   },
-  buttonAdd: {},
+  buttonAdd: {
+    position: "relative",
+    top: -44,
+    right: -104,
+  },
   title: {
     color: "black",
     fontSize: 30,
@@ -56,9 +60,13 @@ const stylesReg = StyleSheet.create({
     marginTop: 16,
     borderWidth: 1,
     borderRadius: 5,
+    borderColor: "#E8E8E8",
     paddingLeft: 16,
     fontSize: 16,
     backgroundColor: "#F6F6F6",
+  },
+  inputFocus: {
+    borderColor: "blue", // Change the border color when focused
   },
 
   button: {

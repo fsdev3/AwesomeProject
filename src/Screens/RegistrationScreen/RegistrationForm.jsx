@@ -1,18 +1,19 @@
 import React from "react";
 import { Pressable, Text, TextInput, View } from "react-native";
 import stylesReg from "./styles";
-import ButtonAdd from "../../Images/add.svg";
+import { AntDesign } from "@expo/vector-icons";
 
 export const RegistrationForm = () => {
   return (
     <View style={stylesReg.container}>
       <View style={stylesReg.avatarContainer}>
+        <View style={stylesReg.imageContainer}>
+          {/* <Image style={stylesReg.avatar}></Image> */}
+        </View>
         <Pressable style={stylesReg.buttonAdd}>
-          <View style={stylesReg.imageContainer}>
-            {/* <Image style={stylesReg.avatar}></Image> */}
+          <View>
+            <AntDesign name="pluscircleo" size={25} color="#FF6C00" />
           </View>
-
-          {/* <ButtonAdd width={25} height={25} /> */}
         </Pressable>
       </View>
 
@@ -21,7 +22,7 @@ export const RegistrationForm = () => {
       </View>
       <View style={stylesReg.formReg}>
         <TextInput
-          style={stylesReg.textInput}
+          style={[stylesReg.textInput, stylesReg.inputFocus]}
           // value={name}
           // onChangeText={setName}
           placeholder="Login"
